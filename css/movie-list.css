@@ -1,5 +1,84 @@
  
+:root {
+	--pencil-color: lightseagreen;
+	--pencil-color-active: orange;
+	--trash-color: red;
+	--close-color: crimson;
+	--save-color: royalblue;
+}
+
 .action {
 	display: inline;
-	color: lightseagreen;
+}
+
+.action .ri-pencil-line {
+	visibility: hidden;
+}
+
+.editable:hover .action .ri-pencil-line {
+	visibility: visible;
+}
+
+.ri-pencil-line{
+	color: var(--pencil-color);
+	transition: color 0.3s;
+}
+
+.ri-pencil-line:hover:before {
+	content: "";
+}
+
+.ri-pencil-line:hover:after {
+	content: "\efdf";
+}
+
+.ri-pencil-line:hover {
+	color: var(--pencil-color-active);
+}
+
+.actions {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.actions .ri-delete-bin-line {
+	color: var(--trash-color);
+}
+
+.actions .ri-delete-bin-line:hover:before {
+	content: "";
+}
+
+.actions .ri-delete-bin-line:hover:after {
+	content: "\ec29";
+}
+
+.ri-close-circle-line {
+	color: var(--close-color);
+}
+
+.ri-close-circle-line:hover:before {
+	content: "";
+}
+
+.ri-close-circle-line:hover:after {
+	content: "\eb96";
+}
+
+.ri-save-3-line {
+	color: var(--save-color);
+}
+
+.ri-save-3-line:hover:before {
+	content: "";
+}
+
+.ri-save-3-line:hover::after {
+	content: "\f0b0";
+}
+
+.field-edit {
+	display: flex;
+	align-items: center;
 }

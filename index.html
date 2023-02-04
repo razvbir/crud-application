@@ -25,90 +25,114 @@
 				<th>Number</th>
 				<th>Poster</th>
 				<th colspan="4">Details</th>
+				<th>Actions</th>
 			</tr>
 		</thead>
 		<tbody>
 			<div class="item">
 				<tr>
-					<td rowspan="4">1</td>
+					<td class="editable" rowspan="4">1 <div class="action"><i class="ri-pencil-line"></td>
 					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
-					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Title <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<td rowspan="4">
+						<div class="actions">
+							<i class="ri-pencil-line"></i>
+							<i class="ri-delete-bin-line"></i>
+						</div>
+					</td>
 				</tr>
 				<tr>
 					<td>The Northman</td>
-					<td rowpsan="2">Descrierea filmului</td>
+					<td rowspan="3">Descrierea filmului</td>
 					<td>Ana Taylor-Joy</td>
 					<td>01-02-2023</td>
 				</tr>
 				<tr>
-					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th></th>
-					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Year <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Edited</th>
 				</tr>
 				<tr>
 					<td>2022</td>
-					<td></td>
 					<td>Robert Eggers</td>
 					<td>03-02-2023</td>
 				</tr>
 			</div>
 			<div class="item">
 				<tr>
-					<td rowspan="4">1</td>
+					<td rowspan="4">
+						<div class="field-edit">
+							<i class="ri-close-circle-line"></i>
+							<input type="text" value="1">
+							<i class="ri-save-3-line"></i>
+						</div>
+					</td>
 					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
 					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<td rowspan="4">
+						<div class="actions">
+							<i class="ri-pencil-line"></i>
+							<i class="ri-delete-bin-line"></i>
+						</div>
+					</td>
 				</tr>
 				<tr>
-					<td>The Northman</td>
-					<td rowpsan="2">Descrierea filmului</td>
+					<td>
+						<div class="field-edit">
+							<i class="ri-close-circle-line"></i>
+							<input type="text" value="The Northman">
+							<i class="ri-save-3-line"></i>
+						</td>
+					<td rowspan="3">Descrierea filmului</td>
 					<td>Ana Taylor-Joy</td>
 					<td>01-02-2023</td>
 				</tr>
 				<tr>
-					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th></th>
-					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Year <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th class="editable">Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Edited</th>
 				</tr>
 				<tr>
 					<td>2022</td>
-					<td></td>
 					<td>Robert Eggers</td>
 					<td>03-02-2023</td>
 				</tr>
 			</div>
 			<div class="item">
 				<tr>
-					<td rowspan="4">1</td>
+					<td rowspan="4"><input type="text" value="1"></td>
 					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
 					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<td rowspan="4">
+						<div class="actions">
+							<i class="ri-close-circle-line"></i>
+							<i class="ri-save-3-line"></i>
+						</div>
+					</td>
 				</tr>
 				<tr>
-					<td>The Northman</td>
-					<td rowpsan="2">Descrierea filmului</td>
-					<td>Ana Taylor-Joy</td>
-					<td>01-02-2023</td>
+					<td><input type="text" value="The Northman"></td>
+					<td rowspan="3"><textarea rows="10" cols="20" style="resize:none">Descrierea filmului</textarea></td>
+					<td><input type="text" value="Taylor Joy"></td>
+					<td><input type="date" name="party" min="2000-01-01" max="2023-03-30" value="2023-02-01"/></td>
 				</tr>
 				<tr>
 					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
-					<th></th>
 					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
 					<th>Edited</th>
 				</tr>
 				<tr>
-					<td>2022</td>
-					<td></td>
-					<td>Robert Eggers</td>
+					<td><input type="number" min="1900" max="2023" value="2022"></td>
+					<td><input type="text" value="Taylor Joy"></td>
 					<td>03-02-2023</td>
 				</tr>
 			</div>
@@ -118,6 +142,7 @@
 				<th>Number</th>
 				<th>Poster</th>
 				<th colspan="4">Details</th>
+				<th>Actions</th>
 			</tr>
 		</tfoot>
 	</table>
