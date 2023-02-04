@@ -4,38 +4,120 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My simple CRUD application</title>
-	<meta name="description" content="A simple crud application written in JavaScript">
+	<title>Movie collection</title>
+	<meta name="description" content="A simple crud application to manage my movie collection">
 	<meta name="author" content="Răzvan Birișan">
 
-	<!-- TODO: add favicon -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/movie-list.css">
+	
+	<link rel="icon" href="favicon-16x16.ico" sizes="16x16" type="image/x-icon"/>
+	<link rel="icon" href="favicon-32x32.ico" sizes="32x32" type="image/x-icon"/>
+	<link rel="icon" href="favicon-48x48.ico" sizes="48x48" type="image/x-icon"/>
+	<link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon"/>
 </head>
 
 <body>
-	<table>
+	<table id="movie-list">
 		<thead>
-			<!-- Test github connection -->
 			<tr>
-				<th>Prenume</th>
-				<th>Nume</th>
-				<th>Vârstă</th>
-				<th>Sex</th>
+				<th>Number</th>
+				<th>Poster</th>
+				<th colspan="4">Details</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>Maria</td>
-				<td>Ioana</td>
-				<td>25</td>
-				<td>Feminin</td>
-			</tr>
+			<div class="item">
+				<tr>
+					<td rowspan="4">1</td>
+					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
+					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+				</tr>
+				<tr>
+					<td>The Northman</td>
+					<td rowpsan="2">Descrierea filmului</td>
+					<td>Ana Taylor-Joy</td>
+					<td>01-02-2023</td>
+				</tr>
+				<tr>
+					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th></th>
+					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Edited</th>
+				</tr>
+				<tr>
+					<td>2022</td>
+					<td></td>
+					<td>Robert Eggers</td>
+					<td>03-02-2023</td>
+				</tr>
+			</div>
+			<div class="item">
+				<tr>
+					<td rowspan="4">1</td>
+					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
+					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+				</tr>
+				<tr>
+					<td>The Northman</td>
+					<td rowpsan="2">Descrierea filmului</td>
+					<td>Ana Taylor-Joy</td>
+					<td>01-02-2023</td>
+				</tr>
+				<tr>
+					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th></th>
+					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Edited</th>
+				</tr>
+				<tr>
+					<td>2022</td>
+					<td></td>
+					<td>Robert Eggers</td>
+					<td>03-02-2023</td>
+				</tr>
+			</div>
+			<div class="item">
+				<tr>
+					<td rowspan="4">1</td>
+					<td rowspan="4"><img src="/data/images/the_northman.jpg"></td>
+					<th>Title <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Synopsis <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Starring <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Added <div class="action"><i class="ri-pencil-line"></i></div></th>
+				</tr>
+				<tr>
+					<td>The Northman</td>
+					<td rowpsan="2">Descrierea filmului</td>
+					<td>Ana Taylor-Joy</td>
+					<td>01-02-2023</td>
+				</tr>
+				<tr>
+					<th>Year <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th></th>
+					<th>Directed <div class="action"><i class="ri-pencil-line"></i></div></th>
+					<th>Edited</th>
+				</tr>
+				<tr>
+					<td>2022</td>
+					<td></td>
+					<td>Robert Eggers</td>
+					<td>03-02-2023</td>
+				</tr>
+			</div>
 		</tbody>
 		<tfoot>
 			<tr>
-				<td>Schimbă prenume</td>
-				<td>Schimbă nume</td>
-				<td>Schimbă vârstă</td>
-				<td>Schimbă sex</td>
+				<th>Number</th>
+				<th>Poster</th>
+				<th colspan="4">Details</th>
 			</tr>
 		</tfoot>
 	</table>
