@@ -1,4 +1,4 @@
- 
+
 :root {
 	--pencil-color: lightseagreen;
 	--pencil-color-active: orange;
@@ -46,11 +46,11 @@
 	color: var(--trash-color);
 }
 
-.ri-delete-bin-line:hover:before {
+.actions .ri-delete-bin-line:hover:before {
 	content: "";
 }
 
-.ri-delete-bin-line:hover:after {
+.actions .ri-delete-bin-line:hover:after {
 	content: "\ec29";
 }
 
@@ -84,6 +84,8 @@
 }
 
 #movie-list {
+	margin: 0 auto;
+	width: 80%;
 	border-collapse: collapse;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 	border-bottom: 2px solid #b22222;
@@ -113,4 +115,73 @@
 #movie-list thead th {
 	padding: 1rem;
 	background-color: #b22222;
+}
+
+#movie-list .item-number {
+	text-align: right;
+}
+
+#movie-list tbody tr th {
+	text-align: left;
+}
+
+#movie-list > tbody > tr:nth-of-type(odd) {
+	background-color: white;
+}
+
+#movie-list > tbody > tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.inner-table {
+	width: 100%;
+	height: 100%;
+}
+
+td.table-inside {
+	height: 100%;
+}
+
+.item-number input[type="text"] {
+	text-align: right;
+}
+
+.inner-table td {
+	width: 25%;
+}
+
+#movie-list > tbody > tr > td:first-child {
+	text-align: center;
+}
+
+#movie-list > tbody > tr {
+	transition: transform 0.3s ease-in;
+}
+
+#movie-list > tbody > tr:hover {
+	transform: scale(1.05);
+}
+
+td[rowspan="3"] {
+	vertical-align: top;
+}
+
+.field-edit.no-icons .ri-close-circle-line{
+	visibility: hidden;
+}
+
+.field-edit.no-icons .ri-save-3-line{
+	visibility: hidden;
+}
+
+#movie-list table.inner-table {
+	padding: 0 1rem;
+}
+
+td.poster {
+	text-align: center;
+}
+
+.item-number .field-edit {
+	justify-content: flex-end;
 }
