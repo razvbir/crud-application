@@ -5,5 +5,6 @@ RemixIcon font used for icons
 Movie icon from [here](https://www.iconfinder.com/icons/285634/movie_film_icon)
 
 TODO
-Add filters
-Add search
+Add filters (on the left)
+Add search (top)
+Add header above the search bar

@@ -46,11 +46,11 @@
 	color: var(--trash-color);
 }
 
-.actions .ri-delete-bin-line:hover:before {
+.ri-delete-bin-line:hover:before {
 	content: "";
 }
 
-.actions .ri-delete-bin-line:hover:after {
+.ri-delete-bin-line:hover:after {
 	content: "\ec29";
 }
 
@@ -81,4 +81,25 @@
 .field-edit {
 	display: flex;
 	align-items: center;
+}
+
+#movie-list {
+	border-collapse: collapse;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#movie-list thead tr th:first-child {
+	color: #b22222;
+	background-color: white;
+}
+
+#movie-list thead {
+	color: white;
+	border: 1px solid #b22222;
+}
+
+#movie-list thead tr,
+#movie-list thead th {
+	padding: 1rem;
+	background-color: #b22222;
 }
