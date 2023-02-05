@@ -130,6 +130,11 @@
 	text-align: right;
 }
 
+#movie-list tbody td,
+#movie-list tbody th {
+	padding: 5px 10px;
+}
+
 #movie-list tbody tr th {
 	text-align: left;
 }
@@ -156,6 +161,15 @@ td.table-inside {
 }
 
 .inner-table td {
+	vertical-align: top;
+}
+
+.inner-table th {
+	vertical-align: bottom;
+}
+
+.inner-table td,
+.inner-table th {
 	width: 25%;
 }
 
