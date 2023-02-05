@@ -16,6 +16,7 @@ All edit fields shoudl contains icons (some oif them should have them with visib
 Blur every row except the one with hover
 Fix alignment issues for inner-table
 Consider adding animation for icon change on hover
+Change inner-table with a grid
 
 JavaScript:
 Load movies dynamically
